@@ -28,7 +28,7 @@
     "compile:cjs": "tsc --module commonjs",
     "compile:mjs": "tsc",
     "rename_mjs": "mv dist/index.js dist/index.esm.js",
-    "test": "jest"
+    "test": "jest --collect-coverage"
   },
   "devDependencies": {
     "@jest/globals": "29.1.2",

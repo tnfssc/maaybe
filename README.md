@@ -1,10 +1,17 @@
 # [maaybe](.)
 
+![npm bundle size](https://img.shields.io/bundlephobia/min/maaybe)
+![NPM Unpacked Size](https://img.shields.io/npm/unpacked-size/maaybe)
+![NPM Version](https://img.shields.io/npm/v/maaybe)
+![NPM Downloads](https://img.shields.io/npm/dy/maaybe)
+![Jest Coverage](https://img.shields.io/badge/coverage-100%-green?logo=jest)
+
 maaybe introduces a new way to think about values.
 
 You may need maaybe or maybe not. But since you maybe need it, maybe just install it. Maybe you don't need maaybe, but having maaybe installed may make your life merrier.
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-4476c0?style=for-the-badge&logo=typescript)
+![PNPM](https://img.shields.io/badge/pnpm-9-f69220?style=for-the-badge&logo=pnpm)
 
 ---
 
