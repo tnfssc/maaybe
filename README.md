@@ -23,9 +23,13 @@ For example, if you have `isLoggedIn`, you can give it the value `maybe` when th
 
 ## [Development](./packages/maaybe)
 
-You can learn more about the development of Maaybe [here](./packages/maaybe)
+You can learn more about the development of maaybe [here](./packages/maaybe)
 
 ## Usage
+
+```sh
+pnpm install maaybe
+```
 
 ```tsx
 // your main.ts or index.ts entry file
