@@ -8,10 +8,6 @@ You may need Maaybe or maybe not. But since you maybe need it, maybe just instal
 
 ---
 
-## Instructions
+## [Development](./packages/maaybe)
 
-- You can build the package using the following command:
-
-```sh
-yarn build
-```
+You can learn more about the development of Maaybe [here](./packages/maaybe)
