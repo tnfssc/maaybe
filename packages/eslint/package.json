@@ -1,0 +1,9 @@
+{
+  "name": "@maaybe/eslint",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "keywords": [],
+  "author": "sharath",
+  "main": "index.js"
+}

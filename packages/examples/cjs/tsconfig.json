@@ -1,0 +1,9 @@
+{
+  "extends": "@maaybe/tsconfig/tsconfig.json",
+  "include": ["index.js"],
+  "compilerOptions": {
+    "checkJs": true,
+    "noEmit": true,
+    "module": "CommonJS"
+  }
+}

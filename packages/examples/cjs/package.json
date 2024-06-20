@@ -1,0 +1,16 @@
+{
+  "name": "@maaybe/example-mjs",
+  "version": "0.1.0",
+  "private": true,
+  "author": "sharath",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "maaybe": "workspace:*"
+  },
+  "devDependencies": {
+    "@maaybe/tsconfig": "workspace:*"
+  }
+}

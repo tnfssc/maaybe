@@ -1,0 +1,38 @@
+{
+  "name": "maaybe",
+  "version": "0.1.0",
+  "description": "maybe use maaybe",
+  "keywords": [
+    "maybe",
+    "maaybe",
+    "optional",
+    "nullable",
+    "typescript",
+    "global"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tnfssc/maaybe.git"
+  },
+  "license": "MIT",
+  "author": "sharath",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "compile": "pnpm run compile:mjs && pnpm run rename_mjs && pnpm run compile:cjs",
+    "compile:cjs": "tsc --module commonjs",
+    "compile:mjs": "tsc",
+    "rename_mjs": "mv dist/index.js dist/index.esm.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@jest/globals": "29.1.2",
+    "@maaybe/tsconfig": "workspace:*",
+    "ts-jest": "29.1.2"
+  }
+}

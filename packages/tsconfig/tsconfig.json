@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    "esModuleInterop": true,
+    "lib": ["es6"],
+    "useDefineForClassFields": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "importHelpers": true,
+    "moduleResolution": "Node",
+    "module": "ES6",
+    "verbatimModuleSyntax": false
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "@maaybe/tsconfig",
+  "version": "0.1.0",
+  "author": "sharath",
+  "main": "tsconfig.json"
+}
