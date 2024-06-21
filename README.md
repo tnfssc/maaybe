@@ -82,6 +82,7 @@ function ShowUser() {
     return <Login />;
   }
 
+  // Fully type safe
   return <UserProfile user={user} />;
 }
 ```
