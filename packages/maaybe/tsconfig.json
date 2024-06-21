@@ -3,7 +3,6 @@
   "include": ["index.ts"],
   "compilerOptions": {
     "outDir": "dist",
-    "declaration": true,
-    "sourceMap": true
+    "declaration": true
   }
 }

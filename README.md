@@ -37,7 +37,7 @@ import 'maaybe';
 
 // any file in the project
 function SecureApp() {
-  const [isLoggedIn, setIsLoggedIn] = useState<Maybe | boolean>(maybe);
+  const [isLoggedIn, setIsLoggedIn] = useState<maybe>(maybe);
 
   useEffect(() => {
     getUser().then((user) => {
@@ -55,4 +55,81 @@ function SecureApp() {
 
   return <Home />;
 }
+
+
+// any file in the project
+function ShowUser() {
+  const [user, setUser] = useState<maybe<User>>(maybe);
+
+  useEffect(() => {
+    getUser().then((user) => {
+      setUser(user);
+    });
+  }, []);
+
+  if (isMaybe(user)) {
+    return <Loading />;
+  }
+
+  // This also works
+  // if (user === maybe) {
+  //   return <Loading />;
+  // }
+
+  if (user === null) {
+    return <Login />;
+  }
+
+  return <UserProfile user={user} />;
+}
+```
+
+## API
+
+### The value `maybe`
+
+```ts
+const explicitlyMaybe = maybe;
+
+// The following are all true
+maybe === maybe;
+maybe !== null;
+maybe !== undefined;
+maybe !== 0;
+maybe !== '';
+maybe !== {};
+maybe !== [];
+maybe !== (() => void null);
+maybe !== true;
+maybe !== false;
+isMaybe(maybe);
+```
+
+### The type `maybe`
+
+```ts
+const thisMaybeMaybe: maybe;
+
+// The following statements can be true
+thisMaybeMaybe === maybe;
+thisMaybeMaybe === true;
+thisMaybeMaybe === false;
+```
+
+```ts
+const thisMaybeMaybe: maybe;
+
+// The following statements can be true but only one at a time
+thisMaybeMaybe === maybe;
+thisMaybeMaybe === true;
+thisMaybeMaybe === false;
+```
+
+```ts
+const thisMaybeMaybe: maybe<User>;
+
+// The following statements can be true but only one at a time
+thisMaybeMaybe === maybe;
+thisMaybeMaybe === null;
+thisMaybeMaybe instanceof User;
 ```

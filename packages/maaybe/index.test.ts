@@ -27,4 +27,22 @@ describe('maaybe', () => {
     expect(isMaybe(true)).toBeFalsy();
     expect(isMaybe(false)).toBeFalsy();
   });
+
+  it('should have correct types', () => {
+    let x: maybe = maybe;
+
+    x = false;
+    x = true;
+    x = maybe;
+
+    expect(x).toBe(maybe);
+
+    let y: maybe<() => void> = maybe;
+
+    y = () => void null;
+    y = null;
+    y = maybe;
+
+    expect(y).toBe(maybe);
+  });
 });
