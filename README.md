@@ -21,6 +21,8 @@ You may need maaybe or maybe not. But since you maybe need it, maybe just instal
 
 For example, if you have `isLoggedIn`, you can give it the value `maybe` when the data is still loading, and then update it to `true` or `false` when the data is available. This allows you to handle the case where the data is not available yet, without having to write a lot of conditional logic.
 
+> TLDR `maybe` is just an alias for `undefined`.
+
 ## [Development](./packages/maaybe)
 
 You can learn more about the development of maaybe [here](./packages/maaybe)
