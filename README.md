@@ -96,7 +96,6 @@ const explicitlyMaybe = maybe;
 // The following are all true
 maybe === maybe;
 maybe !== null;
-maybe !== undefined;
 maybe !== 0;
 maybe !== '';
 maybe !== {};
