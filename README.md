@@ -112,15 +112,6 @@ isMaybe(maybe);
 ```ts
 const thisMaybeMaybe: maybe;
 
-// The following statements can be true
-thisMaybeMaybe === maybe;
-thisMaybeMaybe === true;
-thisMaybeMaybe === false;
-```
-
-```ts
-const thisMaybeMaybe: maybe;
-
 // The following statements can be true but only one at a time
 thisMaybeMaybe === maybe;
 thisMaybeMaybe === true;
